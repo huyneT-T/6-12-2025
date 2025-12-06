@@ -1,0 +1,615 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+        <link rel="stylesheet" href="./ALL_STYLES/styleforhomepage.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
+      
+        <title>Document</title>
+    </head>
+    <body>
+        <input type="checkbox" id="openmenu" class="check"> 
+        <input type="checkbox" id="openuser" class="check">
+        <input type="checkbox" name="" id="openpomodoro" class="check">
+        <input type="checkbox" id="yespomodoro" class="check" >
+        <input type="checkbox" name="" id="focus" class="check">
+        <input type="checkbox" name="" id="zoom_note" class="check">
+        <input type="checkbox" name="" id="opennote" class="check">
+        <input type="checkbox" id="yesopennote" class="check" >
+        
+        <input type="checkbox" name="" id="zoom_todo" class="check">
+        <input type="checkbox" name="" id="opentodo" class="check">
+        <input type="checkbox" name="" id="yesopentodo" class="check">
+
+        <input type="checkbox" name="" id="closeunderedittodo" class="check">
+
+
+        <!-- <label for="openmenu" > -->
+        
+        <!-- </label>     -->
+
+        <header>    
+            <div class="logo_language">
+                <a href="Homepage.html">
+                    <div class="logoweb">
+                        <img class="imgoflogoweb" src="/image/Ảnh chụp màn hình 2025-11-25 152039 (1).png" alt="">
+                    </div>
+                </a>
+                
+            </div>
+        
+            <div class="user_menu">
+                <label for="openuser">
+                    <div class="logouser">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="23" height="23" fill="currentColor"><path d="M4 22C4 17.5817 7.58172 14 12 14C16.4183 14 20 17.5817 20 22H18C18 18.6863 15.3137 16 12 16C8.68629 16 6 18.6863 6 22H4ZM12 13C8.685 13 6 10.315 6 7C6 3.685 8.685 1 12 1C15.315 1 18 3.685 18 7C18 10.315 15.315 13 12 13ZM12 11C14.21 11 16 9.21 16 7C16 4.79 14.21 3 12 3C9.79 3 8 4.79 8 7C8 9.21 9.79 11 12 11Z"></path></svg>
+                    </div>
+                </label>
+                
+                <label for="openmenu">
+                    <div class="menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="23" height="23" fill="currentColor"><path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"></path></svg>
+                    </div>
+                </label>      
+            </div>
+            
+        </header>
+        
+            <div class="undernavmenu">
+                    <label for="openmenu"> 
+                        <div style="width: 100%; height: 100%;"></div>
+                    </label>
+            </div >
+
+        
+            <nav class="menulist">
+                    <div class="menuhead">
+                        <label for="openmenu" class="close">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="23" height="23" fill="currentColor"><path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path></svg>
+                        </label>
+                        <label for="openmenu" class="menu2" style="padding: auto;">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="23" height="23" fill="currentColor"><path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"></path></svg>
+                        </label>
+                    </div> 
+                    <div class="menucontent">
+
+                        <div class="content1">
+                            <div class="home_group group" >
+                                <div class="homeicon menuicon"  >
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="25" fill="currentColor"><path d="M19 21H5C4.44772 21 4 20.5523 4 20V11L1 11L11.3273 1.6115C11.7087 1.26475 12.2913 1.26475 12.6727 1.6115L23 11L20 11V20C20 20.5523 19.5523 21 19 21ZM13 19H18V9.15745L12 3.7029L6 9.15745V19H11V13H13V19Z"></path></svg>
+                                </div>
+                               <a href="Homepage.html" style="text-decoration: none; color: black;">
+                                    <div class="home text" >Home</div>
+                               </a> 
+                            </div>
+
+
+                            <div class="notification_group group">
+                                <div class="notificationicon menuicon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="25" fill="currentColor"><path d="M20 17H22V19H2V17H4V10C4 5.58172 7.58172 2 12 2C16.4183 2 20 5.58172 20 10V17ZM18 17V10C18 6.68629 15.3137 4 12 4C8.68629 4 6 6.68629 6 10V17H18ZM9 21H15V23H9V21Z"></path></svg>
+                                </div>
+                                <div class="notification text">Notification</div>
+                            </div>
+                        </div>
+
+
+                        <hr style="border: 1px solid black; margin-top: 10px; opacity: 0.4; z-index: 1;">
+
+
+                        <div class="content2">
+                            <div class="pomodoro_group group">
+                                <div class="pomodoroicon menuicon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="25" fill="currentColor"><path d="M12.0001 22.0001C7.02956 22.0001 3.00012 17.9707 3.00012 13.0001C3.00012 8.02956 7.02956 4.00012 12.0001 4.00012C16.9707 4.00012 21.0001 8.02956 21.0001 13.0001C21.0001 17.9707 16.9707 22.0001 12.0001 22.0001ZM12.0001 20.0001C15.8661 20.0001 19.0001 16.8661 19.0001 13.0001C19.0001 9.13412 15.8661 6.00012 12.0001 6.00012C8.13412 6.00012 5.00012 9.13412 5.00012 13.0001C5.00012 16.8661 8.13412 20.0001 12.0001 20.0001ZM13.0001 13.0001H16.0001V15.0001H11.0001V8.00012H13.0001V13.0001ZM1.74707 6.2826L5.2826 2.74707L6.69682 4.16128L3.16128 7.69682L1.74707 6.2826ZM18.7176 2.74707L22.2532 6.2826L20.839 7.69682L17.3034 4.16128L18.7176 2.74707Z"></path></svg>
+                                </div>
+                                <label for="openpomodoro">
+                                    <div class="pomodoro text">Pomodoro</div>
+                                </label>
+                                
+                            </div>
+                            
+                            <div class="todolist_group group">
+                                <div class="noteicon menuicon">
+                                    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M17 2H20C20.5523 2 21 2.44772 21 3V21C21 21.5523 20.5523 22 20 22H4C3.44772 22 3 21.5523 3 21V3C3 2.44772 3.44772 2 4 2H7V0H9V2H15V0H17V2ZM17 4V6H15V4H9V6H7V4H5V20H19V4H17ZM7 8H17V10H7V8ZM7 12H17V14H7V12Z"></path></svg> -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="25" fill="currentColor"><path d="M21 15L15 20.996L4.00221 21C3.4487 21 3 20.5551 3 20.0066V3.9934C3 3.44476 3.44495 3 3.9934 3H20.0066C20.5552 3 21 3.45576 21 4.00247V15ZM19 5H5V19H13V14C13 13.4872 13.386 13.0645 13.8834 13.0067L14 13L19 12.999V5ZM18.171 14.999L15 15V18.169L18.171 14.999Z"></path></svg>
+                                </div>
+                                <label for="opennote">
+                                    <div class="todolist text">Notes</div>
+                                </label>
+                                
+                            </div>
+
+                            
+                            <div class="todolist_group group">
+                                <div class="todolisticon menuicon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="25" fill="currentColor"><path d="M17 2H20C20.5523 2 21 2.44772 21 3V21C21 21.5523 20.5523 22 20 22H4C3.44772 22 3 21.5523 3 21V3C3 2.44772 3.44772 2 4 2H7V0H9V2H15V0H17V2ZM17 4V6H15V4H9V6H7V4H5V20H19V4H17ZM7 8H17V10H7V8ZM7 12H17V14H7V12Z"></path></svg>
+                                </div>
+                                <label for="opentodo">
+                                    <div class="todolist text">To do list</div>
+                                </label>
+                                
+                            </div>
+
+                            <div class="schdule_group group">
+                                <div class="schduleicon menuicon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="25" fill="currentColor"><path d="M9 1V3H15V1H17V3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H7V1H9ZM20 11H4V19H20V11ZM8 14V16H6V14H8ZM18 14V16H10V14H18ZM7 5H4V9H20V5H17V7H15V5H9V7H7V5Z"></path></svg>
+                                </div>
+                                <div class="schdule text">
+                                    Schdule
+                                </div>
+                            </div>
+
+                            <div class="chart_group group">
+                                <div class="charticon menuicon">
+                                    <!-- <i class="ri-bar-chart-line"></i> -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="25" fill="currentColor"><path d="M5 3V19H21V21H3V3H5ZM20.2929 6.29289L21.7071 7.70711L16 13.4142L13 10.415L8.70711 14.7071L7.29289 13.2929L13 7.58579L16 10.585L20.2929 6.29289Z"></path></svg>
+                                </div>
+                                <div class="chart text">Chart</div>
+                            </div>
+                           
+                        </div>
+                        <hr style="border: 1px solid black; margin-top: 10px; opacity: 0.4; z-index: 1;">
+                        <div class="content3">
+                           
+                            <div class="leaderboard_group group">
+                                 <div class="menuicon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="25" fill="currentColor"><path d="M3 12H7V21H3V12ZM17 8H21V21H17V8ZM10 2H14V21H10V2Z"></path></svg>
+                                </div>
+                                <div class="text">Leaderboard</div>
+                            </div>
+                        </div>
+
+                       
+                     </div>    
+                        <!-- <hr style="border: 1px solid black; margin-top: 10px; opacity: 0.4; z-index: 1;"> -->
+                        
+
+                     <div class="streak_language">
+                         <div class="streak_group group">
+                            <div class="streakicon" style="padding: auto;">
+                                <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M12 23C16.1421 23 19.5 19.6421 19.5 15.5C19.5 14.6345 19.2697 13.8032 19 13.0296C17.3333 14.6765 16.0667 15.5 15.2 15.5C19.1954 8.5 17 5.5 11 1.5C11.5 6.49951 8.20403 8.77375 6.86179 10.0366C5.40786 11.4045 4.5 13.3462 4.5 15.5C4.5 19.6421 7.85786 23 12 23ZM12.7094 5.23498C15.9511 7.98528 15.9666 10.1223 13.463 14.5086C12.702 15.8419 13.6648 17.5 15.2 17.5C15.8884 17.5 16.5841 17.2992 17.3189 16.9051C16.6979 19.262 14.5519 21 12 21C8.96243 21 6.5 18.5376 6.5 15.5C6.5 13.9608 7.13279 12.5276 8.23225 11.4932C8.35826 11.3747 8.99749 10.8081 9.02477 10.7836C9.44862 10.4021 9.7978 10.0663 10.1429 9.69677C11.3733 8.37932 12.2571 6.91631 12.7094 5.23498Z"></path></svg> -->
+                                <img style="width: 100%; height: auto;" src="/image/9c0b1813325b7da53f591c522328bcff-removebg-preview.png" alt="">
+                            </div>
+                            <div class="streak text" style="text-align: center; align-self: start; display: flex; justify-content: center; align-items: baseline; gap:5px"> 
+                                <h2 style="font-family:sans-serif;">3</h2>  <p> Streak</p>
+                            </div>
+                        </div>
+                        <div class="language_group group" style="border-radius: 5px;">
+                           
+                        </div>
+                     </div>   
+             </nav>     
+                <div class="underusercontent">
+                    <label for="openuser">
+                        <div style="width: 100%; height: 100%;"></div>
+                    </label>
+                </div>
+            
+             
+             <div class="usercontent">
+                <div class="closeusercontent">
+                <label for="openuser" style="width: 100%; height: 30px; display: flex; justify-content: center;align-items: center;">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40" fill="currentColor"><path d="M12 15.6315L20.9679 10.8838L20.0321 9.11619L12 13.3685L3.9679 9.11619L3.03212 10.8838L12 15.6315Z"></path></svg>
+                </label>
+                </div>
+                <div class="usercontentlist">
+                    <div class="usercontent1">
+                        <div class="avatar"></div>
+                        <div class="name_email"></div>
+                    </div>
+                    <div class="usercontent2">
+                        <div class="achive alliteminusercontent">
+                            <svg class="icon_usercontent"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="25" fill="currentColor"><path d="M13.0049 16.9409V19.0027H18.0049V21.0027H6.00488V19.0027H11.0049V16.9409C7.05857 16.4488 4.00488 13.0824 4.00488 9.00275V3.00275H20.0049V9.00275C20.0049 13.0824 16.9512 16.4488 13.0049 16.9409ZM6.00488 5.00275V9.00275C6.00488 12.3165 8.69117 15.0027 12.0049 15.0027C15.3186 15.0027 18.0049 12.3165 18.0049 9.00275V5.00275H6.00488ZM1.00488 5.00275H3.00488V9.00275H1.00488V5.00275ZM21.0049 5.00275H23.0049V9.00275H21.0049V5.00275Z"></path></svg>
+                            <p class="text_usercontent">Achive</p>
+                        </div>
+                        <div class="usercontentsetting alliteminusercontent">
+                            <svg class="icon_usercontent"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="25" fill="currentColor"><path d="M2.21232 14.0601C1.91928 12.6755 1.93115 11.2743 2.21316 9.94038C3.32308 10.0711 4.29187 9.7035 4.60865 8.93871C4.92544 8.17392 4.50032 7.22896 3.62307 6.53655C4.3669 5.3939 5.34931 4.39471 6.53554 3.62289C7.228 4.50059 8.17324 4.92601 8.93822 4.60914C9.7032 4.29227 10.0708 3.32308 9.93979 2.21281C11.3243 1.91977 12.7255 1.93164 14.0595 2.21364C13.9288 3.32356 14.2964 4.29235 15.0612 4.60914C15.8259 4.92593 16.7709 4.5008 17.4633 3.62356C18.606 4.36739 19.6052 5.3498 20.377 6.53602C19.4993 7.22849 19.0739 8.17373 19.3907 8.93871C19.7076 9.70369 20.6768 10.0713 21.7871 9.94028C22.0801 11.3248 22.0682 12.726 21.7862 14.06C20.6763 13.9293 19.7075 14.2969 19.3907 15.0616C19.0739 15.8264 19.4991 16.7714 20.3763 17.4638C19.6325 18.6064 18.6501 19.6056 17.4638 20.3775C16.7714 19.4998 15.8261 19.0743 15.0612 19.3912C14.2962 19.7081 13.9286 20.6773 14.0596 21.7875C12.675 22.0806 11.2738 22.0687 9.93989 21.7867C10.0706 20.6768 9.70301 19.708 8.93822 19.3912C8.17343 19.0744 7.22848 19.4995 6.53606 20.3768C5.39341 19.633 4.39422 18.6506 3.62241 17.4643C4.5001 16.7719 4.92552 15.8266 4.60865 15.0616C4.29179 14.2967 3.32259 13.9291 2.21232 14.0601ZM3.99975 12.2104C5.09956 12.5148 6.00718 13.2117 6.45641 14.2963C6.90564 15.3808 6.75667 16.5154 6.19421 17.5083C6.29077 17.61 6.38998 17.7092 6.49173 17.8056C7.4846 17.2432 8.61912 17.0943 9.70359 17.5435C10.7881 17.9927 11.485 18.9002 11.7894 19.9999C11.9295 20.0037 12.0697 20.0038 12.2099 20.0001C12.5143 18.9003 13.2112 17.9927 14.2958 17.5435C15.3803 17.0942 16.5149 17.2432 17.5078 17.8057C17.6096 17.7091 17.7087 17.6099 17.8051 17.5081C17.2427 16.5153 17.0938 15.3807 17.543 14.2963C17.9922 13.2118 18.8997 12.5149 19.9994 12.2105C20.0032 12.0704 20.0033 11.9301 19.9996 11.7899C18.8998 11.4856 17.9922 10.7886 17.543 9.70407C17.0937 8.61953 17.2427 7.48494 17.8052 6.49204C17.7086 6.39031 17.6094 6.2912 17.5076 6.19479C16.5148 6.75717 15.3803 6.9061 14.2958 6.4569C13.2113 6.0077 12.5144 5.10016 12.21 4.00044C12.0699 3.99666 11.9297 3.99659 11.7894 4.00024C11.4851 5.10005 10.7881 6.00767 9.70359 6.4569C8.61904 6.90613 7.48446 6.75715 6.49155 6.1947C6.38982 6.29126 6.29071 6.39047 6.19431 6.49222C6.75668 7.48509 6.90561 8.61961 6.45641 9.70407C6.00721 10.7885 5.09967 11.4855 3.99995 11.7899C3.99617 11.93 3.9961 12.0702 3.99975 12.2104ZM11.9997 15.0002C10.3428 15.0002 8.99969 13.657 8.99969 12.0002C8.99969 10.3433 10.3428 9.00018 11.9997 9.00018C13.6565 9.00018 14.9997 10.3433 14.9997 12.0002C14.9997 13.657 13.6565 15.0002 11.9997 15.0002ZM11.9997 13.0002C12.552 13.0002 12.9997 12.5525 12.9997 12.0002C12.9997 11.4479 12.552 11.0002 11.9997 11.0002C11.4474 11.0002 10.9997 11.4479 10.9997 12.0002C10.9997 12.5525 11.4474 13.0002 11.9997 13.0002Z"></path></svg>
+                            <p class="text_usercontent">Setting</p>
+                        </div>
+                        <div class="darklight alliteminusercontent">
+                            <svg class="icon_usercontent"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="25" fill="currentColor"><path d="M10 7C10 10.866 13.134 14 17 14C18.9584 14 20.729 13.1957 21.9995 11.8995C22 11.933 22 11.9665 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C12.0335 2 12.067 2 12.1005 2.00049C10.8043 3.27098 10 5.04157 10 7ZM4 12C4 16.4183 7.58172 20 12 20C15.0583 20 17.7158 18.2839 19.062 15.7621C18.3945 15.9187 17.7035 16 17 16C12.0294 16 8 11.9706 8 7C8 6.29648 8.08133 5.60547 8.2379 4.938C5.71611 6.28423 4 8.9417 4 12Z"></path></svg>
+                            <p class="text_usercontent">Dark</p>
+
+                        </div>
+                        <div class="language alliteminusercontent">
+                             <!-- <svg class="icon_usercontent"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="25" fill="currentColor"><path d="M2.21232 14.0601C1.91928 12.6755 1.93115 11.2743 2.21316 9.94038C3.32308 10.0711 4.29187 9.7035 4.60865 8.93871C4.92544 8.17392 4.50032 7.22896 3.62307 6.53655C4.3669 5.3939 5.34931 4.39471 6.53554 3.62289C7.228 4.50059 8.17324 4.92601 8.93822 4.60914C9.7032 4.29227 10.0708 3.32308 9.93979 2.21281C11.3243 1.91977 12.7255 1.93164 14.0595 2.21364C13.9288 3.32356 14.2964 4.29235 15.0612 4.60914C15.8259 4.92593 16.7709 4.5008 17.4633 3.62356C18.606 4.36739 19.6052 5.3498 20.377 6.53602C19.4993 7.22849 19.0739 8.17373 19.3907 8.93871C19.7076 9.70369 20.6768 10.0713 21.7871 9.94028C22.0801 11.3248 22.0682 12.726 21.7862 14.06C20.6763 13.9293 19.7075 14.2969 19.3907 15.0616C19.0739 15.8264 19.4991 16.7714 20.3763 17.4638C19.6325 18.6064 18.6501 19.6056 17.4638 20.3775C16.7714 19.4998 15.8261 19.0743 15.0612 19.3912C14.2962 19.7081 13.9286 20.6773 14.0596 21.7875C12.675 22.0806 11.2738 22.0687 9.93989 21.7867C10.0706 20.6768 9.70301 19.708 8.93822 19.3912C8.17343 19.0744 7.22848 19.4995 6.53606 20.3768C5.39341 19.633 4.39422 18.6506 3.62241 17.4643C4.5001 16.7719 4.92552 15.8266 4.60865 15.0616C4.29179 14.2967 3.32259 13.9291 2.21232 14.0601ZM3.99975 12.2104C5.09956 12.5148 6.00718 13.2117 6.45641 14.2963C6.90564 15.3808 6.75667 16.5154 6.19421 17.5083C6.29077 17.61 6.38998 17.7092 6.49173 17.8056C7.4846 17.2432 8.61912 17.0943 9.70359 17.5435C10.7881 17.9927 11.485 18.9002 11.7894 19.9999C11.9295 20.0037 12.0697 20.0038 12.2099 20.0001C12.5143 18.9003 13.2112 17.9927 14.2958 17.5435C15.3803 17.0942 16.5149 17.2432 17.5078 17.8057C17.6096 17.7091 17.7087 17.6099 17.8051 17.5081C17.2427 16.5153 17.0938 15.3807 17.543 14.2963C17.9922 13.2118 18.8997 12.5149 19.9994 12.2105C20.0032 12.0704 20.0033 11.9301 19.9996 11.7899C18.8998 11.4856 17.9922 10.7886 17.543 9.70407C17.0937 8.61953 17.2427 7.48494 17.8052 6.49204C17.7086 6.39031 17.6094 6.2912 17.5076 6.19479C16.5148 6.75717 15.3803 6.9061 14.2958 6.4569C13.2113 6.0077 12.5144 5.10016 12.21 4.00044C12.0699 3.99666 11.9297 3.99659 11.7894 4.00024C11.4851 5.10005 10.7881 6.00767 9.70359 6.4569C8.61904 6.90613 7.48446 6.75715 6.49155 6.1947C6.38982 6.29126 6.29071 6.39047 6.19431 6.49222C6.75668 7.48509 6.90561 8.61961 6.45641 9.70407C6.00721 10.7885 5.09967 11.4855 3.99995 11.7899C3.99617 11.93 3.9961 12.0702 3.99975 12.2104ZM11.9997 15.0002C10.3428 15.0002 8.99969 13.657 8.99969 12.0002C8.99969 10.3433 10.3428 9.00018 11.9997 9.00018C13.6565 9.00018 14.9997 10.3433 14.9997 12.0002C14.9997 13.657 13.6565 15.0002 11.9997 15.0002ZM11.9997 13.0002C12.552 13.0002 12.9997 12.5525 12.9997 12.0002C12.9997 11.4479 12.552 11.0002 11.9997 11.0002C11.4474 11.0002 10.9997 11.4479 10.9997 12.0002C10.9997 12.5525 11.4474 13.0002 11.9997 13.0002Z"></path></svg> -->
+                            <div class="chooselanguage" style="display: flex ; justify-content: center; align-items: center;"> <p>VN</p> </div>
+                            <p class="text_usercontent">Language</p>
+                        </div>
+                    </div>
+                    <div class="usercontent3">
+                        <div class="logout alliteminusercontent">
+                            <!-- class="icon_usercontent" -->
+                            <svg class="icon_usercontent"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="25" fill="currentColor"><path d="M4 18H6V20H18V4H6V6H4V3C4 2.44772 4.44772 2 5 2H19C19.5523 2 20 2.44772 20 3V21C20 21.5523 19.5523 22 19 22H5C4.44772 22 4 21.5523 4 21V18ZM6 11H13V13H6V16L1 12L6 8V11Z"></path></svg>
+                            <p class="text_usercontent">Logout</p>
+                        </div>
+                    </div>
+                    <div class="usercontent4">
+                        <div class="privacy alliteminusercontent">
+                            <p class="text_usercontent">
+                                Privacy policy
+                            </p>
+                    
+                        </div>
+                        <div class="help alliteminusercontent">
+                            <p class="text_usercontent">
+                                Help and support
+                            </p>
+                        </div>
+                        <div class="error alliteminusercontent">
+                            <p class="text_usercontent">
+                                Submit error report
+                            </p>
+                        </div>
+                    </div>
+                </div>
+             </div>
+             
+
+<!-- /* ============================================================  TÍNH NĂNG ================================================================== */ -->
+
+<!-- ==============================================================POMODORO================================================================= -->
+    <div id ="pomodoropage" class="pomodoropageclass">
+        <div class="pomodoropage_head">
+            <div class="pomodoropage_head_name" style="margin:auto 0px; align-self: flex-start;">
+                Pomodoro Timer
+                <img src="/image/pomodoro-technique.png" alt="">
+            </div>
+            <label for="focus">
+                <div class="zoom">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M11.9498 7.94975L10.5356 9.36396L8.00079 6.828L8.00004 20H6.00004L6.00079 6.828L3.46451 9.36396L2.05029 7.94975L7.00004 3L11.9498 7.94975ZM21.9498 16.0503L17 21L12.0503 16.0503L13.4645 14.636L16.0008 17.172L16 4H18L18.0008 17.172L20.5356 14.636L21.9498 16.0503Z"></path></svg>
+                </div>  
+            </label>
+           
+        </div>
+
+        <div class="pomodoropage_content">
+            <div class="timer">
+                <div class="timer_head">
+                    <div class="onpomodoro itemheadpomo">
+                        Focus
+                    </div>
+                    <div class="shortbeak itemheadpomo">
+                        Short Break
+                    </div>
+                    <div class="longbreak itemheadpomo">
+                        Long Break
+                    </div>
+                </div>
+                <!-- <div class="timer_count">
+                    <div class="count"></div>
+                </div> -->
+                <div class="timer_time">
+                    <div class="count">
+                        4
+                    </div>
+
+                    <div class="hour_minute">
+                        <b> 25:00 </b>
+                    </div>
+                </div>
+                <div class="timer_start">
+                    <div class="start">
+                        START
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pomodoro_end">
+            <div class="sumtime itenendpomo">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M10.9999 2.04938L11 4.06188C7.05371 4.55396 4 7.92036 4 12C4 16.4183 7.58172 20 12 20C13.8487 20 15.5509 19.3729 16.9055 18.3199L18.3289 19.7428C16.605 21.1536 14.4014 22 12 22C6.47715 22 2 17.5228 2 12C2 6.81468 5.94662 2.55115 10.9999 2.04938ZM21.9506 13.0001C21.7509 15.0111 20.9555 16.8468 19.7433 18.3283L18.3199 16.9055C19.1801 15.799 19.756 14.4606 19.9381 12.9999L21.9506 13.0001ZM13.0011 2.04948C17.725 2.51902 21.4815 6.27589 21.9506 10.9999L19.9381 11C19.4869 7.38162 16.6192 4.51364 13.001 4.062L13.0011 2.04948Z"></path></svg>
+                Summary
+            </div>
+            <div class="rankingtime itenendpomo">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M2.00488 19H22.0049V21H2.00488V19ZM2.00488 5L7.00488 8.5L12.0049 2L17.0049 8.5L22.0049 5V17H2.00488V5ZM4.00488 8.84131V15H20.0049V8.84131L16.5854 11.2349L12.0049 5.28024L7.42435 11.2349L4.00488 8.84131Z"></path></svg>
+                Rankking
+            </div>
+            <div class="setuptime itenendpomo">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M17.6177 5.9681L19.0711 4.51472L20.4853 5.92893L19.0319 7.38231C20.2635 8.92199 21 10.875 21 13C21 17.9706 16.9706 22 12 22C7.02944 22 3 17.9706 3 13C3 8.02944 7.02944 4 12 4C14.125 4 16.078 4.73647 17.6177 5.9681ZM12 20C15.866 20 19 16.866 19 13C19 9.13401 15.866 6 12 6C8.13401 6 5 9.13401 5 13C5 16.866 8.13401 20 12 20ZM11 8H13V14H11V8ZM8 1H16V3H8V1Z"></path></svg>
+                Setting
+            </div>
+        </div>
+            <!-- <div class="new" style="width: 100%; height: 700px; background-color: rebeccapurple;"></div> -->
+
+    </div>
+<!-- =========================================================================================================================================== -->
+
+<!-- ===========================================================NOTES=================================================================== -->
+    <div id="notepage" class="notepageclass">
+        <div class="describe_find_group">
+            <div class="note_describe">
+                <div class="note_heading"> Notes
+                    <img src="/image/notes.png" alt="">    
+                </div>
+                <label for="zoom_note">
+                    <div class="note_zoom">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M11.9498 7.94975L10.5356 9.36396L8.00079 6.828L8.00004 20H6.00004L6.00079 6.828L3.46451 9.36396L2.05029 7.94975L7.00004 3L11.9498 7.94975ZM21.9498 16.0503L17 21L12.0503 16.0503L13.4645 14.636L16.0008 17.172L16 4H18L18.0008 17.172L20.5356 14.636L21.9498 16.0503Z"></path></svg>
+                    </div>
+                </label>
+            
+            </div>
+            <div class="notepage_find_type">
+                <div class="note_find">
+                    <div class="find_icon">
+                        <svg style=" border-radius: 50%;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M18.031 16.6168L22.3137 20.8995L20.8995 22.3137L16.6168 18.031C15.0769 19.263 13.124 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20 13.124 19.263 15.0769 18.031 16.6168ZM16.0247 15.8748C17.2475 14.6146 18 12.8956 18 11C18 7.1325 14.8675 4 11 4C7.1325 4 4 7.1325 4 11C4 14.8675 7.1325 18 11 18C12.8956 18 14.6146 17.2475 15.8748 16.0247L16.0247 15.8748Z"></path></svg>
+                    </div>
+                    <input type="text" class="input_find" placeholder="Search">
+                </div>
+                <div class="note_add">
+                    <svg style="margin-right:3px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M13.0001 10.9999L22.0002 10.9997L22.0002 12.9997L13.0001 12.9999L13.0001 21.9998L11.0001 21.9998L11.0001 12.9999L2.00004 13.0001L2 11.0001L11.0001 10.9999L11 2.00025L13 2.00024L13.0001 10.9999Z"></path></svg>
+                    <p style=" font-size: 15px;"> Add</p>
+                </div>
+            </div>
+            <div class="all_favourite">
+                <div class="note_all"> All Notes</div>
+                <div class="note_favourite"> Important</div>
+             </div>
+             <hr style=" margin: 0px auto; width: 90%; height: 2px;background-color: #d39bf1; border: none;">
+        </div>
+
+            <div class="note_grid">
+                <div class="notepage_note">
+                    <div class="note_head">
+                        <div class="note_status_important">
+                            <div class="note_status">Home schooling</div>
+                            <svg class="note_importanticon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M5 2H19C19.5523 2 20 2.44772 20 3V22.1433C20 22.4194 19.7761 22.6434 19.5 22.6434C19.4061 22.6434 19.314 22.6168 19.2344 22.5669L12 18.0313L4.76559 22.5669C4.53163 22.7136 4.22306 22.6429 4.07637 22.4089C4.02647 22.3293 4 22.2373 4 22.1433V3C4 2.44772 4.44772 2 5 2ZM18 4H6V19.4324L12 15.6707L18 19.4324V4Z"></path></svg>
+                        </div>
+                        <svg class="note_deleteicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M17 6H22V8H20V21C20 21.5523 19.5523 22 19 22H5C4.44772 22 4 21.5523 4 21V8H2V6H7V3C7 2.44772 7.44772 2 8 2H16C16.5523 2 17 2.44772 17 3V6ZM18 8H6V20H18V8ZM9 11H11V17H9V11ZM13 11H15V17H13V11ZM9 4V6H15V4H9Z"></path></svg>
+                    </div> 
+                    <textarea name="" id="note_massage"></textarea>
+                    <div class="note_rewrite_day">
+                        <div class="note_day">4 Dec 2025</div>
+                    </div>
+                    <div class="note_rewrite">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="25" fill="currentColor"><path d="M6.41421 15.89L16.5563 5.74785L15.1421 4.33363L5 14.4758V15.89H6.41421ZM7.24264 17.89H3V13.6473L14.435 2.21231C14.8256 1.82179 15.4587 1.82179 15.8492 2.21231L18.6777 5.04074C19.0682 5.43126 19.0682 6.06443 18.6777 6.45495L7.24264 17.89ZM3 19.89H21V21.89H3V19.89Z"></path></svg>
+                    </div>
+                </div>
+                <div class="notepage_note">
+                    <div class="note_head">
+                        <div class="note_status_important">
+                            <div class="note_status">Home schooling</div>
+                            <svg class="note_importanticon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M5 2H19C19.5523 2 20 2.44772 20 3V22.1433C20 22.4194 19.7761 22.6434 19.5 22.6434C19.4061 22.6434 19.314 22.6168 19.2344 22.5669L12 18.0313L4.76559 22.5669C4.53163 22.7136 4.22306 22.6429 4.07637 22.4089C4.02647 22.3293 4 22.2373 4 22.1433V3C4 2.44772 4.44772 2 5 2ZM18 4H6V19.4324L12 15.6707L18 19.4324V4Z"></path></svg>
+                        </div>
+                        <svg class="note_deleteicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M17 6H22V8H20V21C20 21.5523 19.5523 22 19 22H5C4.44772 22 4 21.5523 4 21V8H2V6H7V3C7 2.44772 7.44772 2 8 2H16C16.5523 2 17 2.44772 17 3V6ZM18 8H6V20H18V8ZM9 11H11V17H9V11ZM13 11H15V17H13V11ZM9 4V6H15V4H9Z"></path></svg>
+                    </div> 
+                    <textarea name="" id="note_massage"></textarea>
+                    <div class="note_rewrite_day">
+                        <div class="note_day">4 Dec 2025</div>
+                    </div>
+                    <div class="note_rewrite">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="25" fill="currentColor"><path d="M6.41421 15.89L16.5563 5.74785L15.1421 4.33363L5 14.4758V15.89H6.41421ZM7.24264 17.89H3V13.6473L14.435 2.21231C14.8256 1.82179 15.4587 1.82179 15.8492 2.21231L18.6777 5.04074C19.0682 5.43126 19.0682 6.06443 18.6777 6.45495L7.24264 17.89ZM3 19.89H21V21.89H3V19.89Z"></path></svg>
+                    </div>
+                </div>
+                
+            
+                
+            </div>
+    </div>
+<!-- =================================================================================================================================== -->
+ <!-- ======================= ============================ TODOLIST ============================================================ -->
+    <div class="todolistpage" id="todopage">
+        <div class="todoheading">
+            <div class="todotitle">
+               To Do list 
+            </div>
+            
+            <label for="zoom_todo">
+                <div class="zoomtodo">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M11.9498 7.94975L10.5356 9.36396L8.00079 6.828L8.00004 20H6.00004L6.00079 6.828L3.46451 9.36396L2.05029 7.94975L7.00004 3L11.9498 7.94975ZM21.9498 16.0503L17 21L12.0503 16.0503L13.4645 14.636L16.0008 17.172L16 4H18L18.0008 17.172L20.5356 14.636L21.9498 16.0503Z"></path></svg>
+                </div>
+            </label>
+            
+        </div>
+
+        <div class="todo_add">
+            <div class="todocreatgroup">
+                <input type="text" name="" id="creattodo" class="todocreatbar" placeholder="Creat your list now!">
+                <div class="totoadd">
+                    + Add List
+                </div>
+            </div>
+            
+        </div>
+        <div class="all_task">
+            <h3 style="margin-left: 20px;">All Task</h3>
+        </div>
+        <div class="todocontent">
+            <div class="todoitem">
+                <div class="todotick">
+                    <input type="checkbox" class="donetask">
+                    <input type="text" class="taskcontent" placeholder="Write your task">
+                </div>
+                
+                <label for="closeunderedittodo">
+                     <div class="fix_trash">
+                    <div class="todofix">
+                         <img src="/image/kreispfeile (2).png" alt="">
+                    </div>
+                    </div>
+                </label>
+               
+            </div>
+
+           
+            
+            
+        </div>
+
+        <div class="todoall_today_thisweek">
+            <div class="todoall todo_date_time">All </div>
+            <div class="todotoday todo_date_time ">Today</div>
+            <div class="todothisweek todo_date_time">This Week</div>
+        </div>
+    </div>
+
+
+    
+    <div class="underedittodotask">
+        <label for="closeunderedittodo">
+            <div class="closeedittodo">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M7.82843 10.9999H20V12.9999H7.82843L13.1924 18.3638L11.7782 19.778L4 11.9999L11.7782 4.22168L13.1924 5.63589L7.82843 10.9999Z"></path></svg>
+            </div>
+        </label>
+        
+         <div class="edittodotask">
+            <div class="todoedithead">
+                <h2 style="height: 40px; ; display: flex; justify-content: center; align-items: center;">Edit</h2>
+                
+            </div>
+            <!-- <div class="edittask"> -->
+            <div class="inputedittask">
+                <input type="text" name="" id="edittasktodo" class="todoedittask">
+            </div>
+            
+            <div style=" align-self: start; margin-left: 25px; width: 40%;  display: flex; justify-content: center; align-items: center;" >
+                <div class="todoeditstatus">
+                    <div class="todoprivacy"></div>
+                    <div class="choosetodoprivacy"></div>
+                </div>
+            </div>
+            <div class="todoeditdelete_done">
+                
+                <div class="todoeditdone"> DONE</div>
+                <div class="todotrash">
+                    <img src="/image/papierkorb.png" alt="">
+                </div> 
+            </div>
+            <!-- </div> -->
+            
+        </div>
+    </div>
+       
+
+
+  <!-- ======================================================================================================================================================================== -->
+
+
+<!-- ===================================================================== Schdule ================================================================================================= -->
+
+    <div class="schdulechosseday">
+        <header>
+            <p class="currentday"> December 2025  </p>
+            <div class="movemonth_year">
+                <!-- <span class="material-symbols-rounded"></span> -->
+            </div>
+        </header>
+    </div>
+    <div id="schdulepageid" class="schdulepage">
+        <div class="schdule_heading"></div>
+        <div class="schudle_calender">
+            <div class="btnleft"></div>
+            <div class="calender_day"></div>
+            <div class="btnright"></div>
+        </div>
+        <div class="schdule_time"></div>
+        <div class="schdule_add"></div>
+    </div>
+
+
+
+  <!-- ======================================================================================================================================================================== -->
+
+        <script >
+                const menu_open = document.getElementById("openmenu");
+
+                const pomo_open = document.getElementById("openpomodoro");
+                const check_pomo = document.getElementById("yespomodoro");
+                const zoompomo = document.getElementById("focus");
+
+                const note_open = document.getElementById("opennote");
+                const check_note= document.getElementById("yesopennote");
+                const zoomnote = document.getElementById("zoom_note");
+
+                const todo_open = document.getElementById("opentodo");
+                const check_todo = document.getElementById("yesopentodo");
+                const zoomtodo = document.getElementById("zoom_todo");
+                
+                let box1 = document.getElementById("pomodoropage");
+                let box2 = document.getElementById("notepage");
+                let box3 = document.getElementById("todopage");
+
+
+                menu_open.addEventListener("change", function () {
+                    if (menu_open.checked) {
+                        pomo_open.checked = false;
+                        note_open.checked = false;
+                        todo_open.checked = false;
+
+                        
+                    }
+                });
+                pomo_open.addEventListener("change" , function(){
+                    if(pomo_open.checked){
+                        check_pomo.checked = true;
+                        menu_open.checked = false;
+                        zoompomo.checked = true;
+
+                    }
+                    if(check_pomo.checked){
+                        box1.style.display = "flex";
+                        box1.style.zIndex = 150;
+                        box2.style.zIndex = 100;
+                        box3.style.zIndex = 100;
+                    }
+                    else{
+                        box1.style.display = "none";
+                    }
+        
+                })
+
+                note_open.addEventListener("change" , function(){
+
+                    if(note_open.checked){
+                        check_note.checked = true;
+                        menu_open.checked = false;
+                        zoomnote.checked = true;
+
+                    }
+                    if(check_note.checked){
+                        box2.style.display = "flex";
+                        box1.style.zIndex = 100;
+                        box2.style.zIndex = 150;
+                        box3.style.zIndex = 100;
+
+                    }
+                    else{
+                        box2.style.display = "none";
+                    }
+
+                })
+
+                todo_open.addEventListener("change" , function(){
+                    if(todo_open.checked){
+                        check_todo.checked = true;
+                        menu_open.checked = false;
+                        zoomtodo.checked = false;
+
+                    }
+
+                    if(check_todo.checked){
+                        box3.style.display = "block";
+                        box1.style.zIndex = 100;
+                        box2.style.zIndex = 100;
+                        box3.style.zIndex = 150;
+                    }
+                    else{
+                        box3.style.display = "none"
+                    }
+                })
+
+                
+            
+                
+        </script>
+
+
+    </body>
+    </html>
