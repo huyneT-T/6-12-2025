@@ -16,12 +16,36 @@
     --pomodoropage_head-heigh:9%;
     --note_all_favourite-heigh:40px;
 
+
+    /* =============================================================================== */
+                /* ========TODO======== */
+
+            --todoheaing-color:  rgb(153, 198, 231) ;
+            --notepage-color: rgb(140, 161, 200); ;
+            --todoitem-color : rgb(221, 215, 237) ;
+            --todoadd-color: rgb(46, 46, 234); 
+            --todocontent-color: rgb(196, 201, 233);
+            --taskcontent-color: rgba(72, 102, 129, 0.436);
+            
+                /* ======================= */
+
+                /* ==========CHART=========== */
+                --chartheading-color : rgb(226, 231, 243);
+                --timeofdayitem-color :rgb(239, 233, 233);
+                --chart_pomo_element-color: rgb(235, 235, 235); 
+                --chart_note_element-color: #ffffff;  
+                --chart_todolist_element-color : rgb(255, 255, 255) ;
+                --chart_schdule_emelent-color : rgb(255, 255, 255);
+                --chart_name_content-color: rgb(181, 200, 208);
+                --todolistbar-color : rgb(255, 255, 255);
+
+                /* ============================== */
 }
 
 *{
     padding:0;
     margin: 0;
-    font-family: "Syne", sans-serif;
+    font-family:  sans-serif;
     font-optical-sizing: auto;
     font-style:normal;
 
@@ -37,7 +61,8 @@
 
 body {
 }
-@media (max-width: 780px){
+                /* max-width = 780px */
+@media (max-width: 1780px){
     .imgoflanguage{
         width: 100%;
         height: 100%;
@@ -140,7 +165,7 @@ body {
      
 }
 .menulist::-webkit-scrollbar {
-  display: none;               /* Chrome, Safari, Edge mới */
+  display: none;              
 }
 #openmenu:checked ~ .menulist {  
      transform: translateX(0);
@@ -153,12 +178,9 @@ body {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        /* border: 1px solid black; */
         background: var(--menulist-color);
         border-radius: 10px 0px 0px 0px;
-        /* border: 1px solid black; */
         z-index: 2;
-        /* display: none; */
        
 
 
@@ -166,13 +188,11 @@ body {
 
     }
      .menucontent{
-        /* border: 2px solid black; */
         margin-top: var(--headmenu-heigh);
         height: calc(100vh - var(--headmenu-heigh) - var(--endmenu_heigh));
         width: auto;
         padding: var(--padding-menucontent);
         overflow: scroll;
-        /* border:1px solid black; */
 
     }
    
@@ -199,7 +219,6 @@ body {
 .content1,.content2 , .content3{
     width: 100%;
     height:200px;
-    /* border: 1px solid rgb(229, 22, 22); */
     padding: 0 ;
     z-index: 1;
 }
@@ -242,7 +261,6 @@ body {
     height: auto;
     display: flex;
     flex-direction: column;
-    /* justify-content: ; */
     gap:15px;
     
 
@@ -259,9 +277,7 @@ body {
     border: 1px solid black;
     background: whitesmoke;
     border-radius: 0px 0px 0px 10px;
-    /* border: 1px solid black; */
     z-index: 2;
-    /* display: none; */
     gap:70px
     
     
@@ -288,7 +304,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* border: 1px solid black; */
     background: var(--menulist-color);
     z-index: 2;
     gap:20px;
@@ -344,7 +359,7 @@ body {
     width: 100%;
     height: 550px;
     background-color: rgb(243, 243, 243);
-    z-index: 180;
+    z-index: 191;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -359,7 +374,7 @@ body {
     height: 100vh;
     background: rgb(61, 60, 60);
     opacity: 0.5;
-    z-index: 155;
+    z-index: 190;
     position: fixed;
     top: 0;
     display:none;
@@ -460,7 +475,6 @@ body {
     /* margin-left: calc(var(--usercontent-margin-left) - 10px); */
     padding-left: calc(var(--usercontent-margin-left) - 10px);
  }
-
  .chooselanguage{
     width: 35px;
     height: 25px; 
@@ -468,12 +482,9 @@ body {
     margin-left: var(--usercontent-margin-left);
     border-radius: 4px;
  }
-
-
  .usercontent1 , .usercontent2 , .usercontent3 , .usercontent4{
     border-bottom: 1px solid gray;
  }
-
  .alliteminusercontent:hover{
     background-color: rgb(233, 233, 233);
  }
@@ -481,23 +492,138 @@ body {
 
 /* ============================================================  TÍNH NĂNG ================================================================== */
 
+.underpomost{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 59;
+    background-color: #595858;
+    opacity: 0.8;
+    display: none;
+}
+
+.openunderstpomo{
+    display: block;
+}
+
+.settingtimepomo{
+
+    z-index: 60;
+    width: 90%;
+    position: fixed;
+    top:30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    left: 5%;
+    border-radius: 6px;
+    padding-bottom:15px;
+    background-color:rgb(227, 157, 164) ;
+    transition: 0.3s;
+    display: none;
+}
+.clstpomo{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;align-items: center;
+}
+
+.stheading{
+    height: 95%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    /* border: 1px solid black; */
+}
+
+.clstpomo{
+    position: absolute;
+    /* left: 100%; */right: 25px;
+    
+}
+.stcontent{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+    /* border: 1px solid black; */
+}
+.stcontenthead{
+    border-top:1px solid black ;
+    width: 97%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 40px;
+    font-size: 20px;
+}
+.stcontentsettime{
+    width: 95%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+
+    /* border: 1px solid black;  */
+
+}
+#setpomodone{
+    width: 60px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+    /* position: absolute; */
+    background-color: #dfc8d6;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 65%;
+    margin-top: 10px;
+    
+}
+
+.settimefocus , .settimeshort ,.settinglong {
+    width: calc(90% / 3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#timeoffucusid , #timeoflong , #timeoflongbreak{
+    width: 70%;
+    height: 35px;
+    border-radius: 5px;
+    background-color: rgb(239, 238, 240);
+}
+.opensettingpomo{
+    display: flex;
+}
 
 .pomodoropageclass{
     width: 100%;
-    height: calc(100% - var(--headmenu-heigh) );
+    height: calc(100% - var(--headmenu-heigh));
     background-color: rgb(228, 190, 190);
-    /* margin-top: var(--headmenu-heigh); */
     position: fixed;
     top:var(--headmenu-heigh);
     left: 0;
     display: flex;
     flex-direction: column;
-    /* border: 2px solid black; */
-    overflow: scroll;
-    z-index: 100;
-    
+    border: 2px solid black;
+    /* overflow: scroll; */
+    display: none;
+    transition: 0.3s;   
+    gap:5%;  
+    /* background-color: red; */
 }
-
 .pomodoropage_head{
     width: 100%;
     height: auto;
@@ -533,7 +659,7 @@ body {
     /* align-items: center; */
     align-items: center;    
     /* border: 3px solid black; */
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
 
     /* background-color: rebeccapurple; */
 }
@@ -546,6 +672,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    padding: 0px 10px
     /* border: 1px solid red; */
 }
 .timer_head{
@@ -605,7 +732,7 @@ body {
     display: flex;
     justify-content: center;
     align-items:center;
-    font-size: 80px ;
+    font-size: 70px ;
     
 }
 .timer_start{
@@ -614,17 +741,17 @@ body {
     height: 65px;
     display: flex;
     align-items: start;
-    justify-content: center;
+    justify-content: space-between;
 }
 .start{
-    width: 55%;
+    width: calc(90% /3 );
     height: 55px;
     border: 1px solid black;
     border-radius: 3px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 40px;
+    /* font-size: 40px; */
 }
 
 .pomodoro_end{
@@ -648,17 +775,22 @@ body {
     align-items: center;
 }
 
-#pomodoropage{
-    display: none;
+
+
+.pomodoropageopen{
+    /* transition: 1.3s; */
+    top:0px;
+    height: 100%;
+    transition: 0.3s;
+    display: flex;
+}
+.pomodoropagezoom{
+    top:var(--headmenu-heigh);
+    transition: 0.3s;
 }
 
-#focus:checked ~ .pomodoropageclass{
-    top:0;
-    gap:20px;
-    height: 100%;
-}
-#focus:checked ~ .timer{
-    /* width: 100%; */
+.open_pomo{
+    display:flex; 
 }
 
 /* ================================================================================================================================= */
@@ -668,14 +800,20 @@ body {
     height: calc(100% - var(--headmenu-heigh));
     position: fixed;
     background-color:   rgb(213, 199, 239);
-    top:var(--headmenu-heigh);
+    /* opacity: 0.2; */
+    top: var(--headmenu-heigh);
     left: 0;
-    z-index: 100;
-    /* display: none; */
     display: flex;
     flex-direction: column;
-    /* border: 5px solid black; */
+    transition: 0.3s;
+    overflow: scroll;
+    /* display: none; */
 }
+
+.notepageclass::-webkit-scrollbar{
+    display: none;
+}
+
 .describe_find_group{
     display: flex;
     flex-direction:column;
@@ -690,7 +828,6 @@ body {
     justify-content: space-around;
     /* background-color: #94a3b8; */
     /* position: fixed ; */
-
 }
 .note_heading{
     width: 60%;
@@ -754,13 +891,14 @@ input[type="text"]  {
 }
 .note_add{
     height: 40px;
-    width: 19%;
+    width: 23%;
     border: 1px solid black;
     margin:auto 0px;
     border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 18px;
 
 }
 
@@ -774,29 +912,31 @@ input[type="text"]  {
     padding: 10px;
 }
 .creat_note{
-    width: 70%;
-    height: 30px;
+    width: 90%;
+    height: 70px;
     /* border: 1px  black; */
+    margin: 0px auto;
     border-style:dashed;
     display: flex;
     align-items: center;
-    justify-content: center;
-}
-#zoom_note:checked ~ .notepage{
-    top:0;
-    left: 0;
-    height: 100%;
-}
+    justify-content: left;
+    border-radius: 8px;
+    font-size: 20px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    border-width: 2px;
 
-
+}
+.addnewnote{
+    /* border: 12x solid black; */
+}
 .all_favourite{
     width: 100% ;
-    height: 70px;
-    /* border: 1px solid black; */
+    height: 40px;
     display: flex;
     justify-content:space-evenly;
-    /* gap:55px; */
     align-items: center;
+    margin-bottom: 5px;
 }
 .note_all{
     font-size: 19px;
@@ -806,6 +946,7 @@ input[type="text"]  {
     display: flex;
     justify-content: center;
     align-items: end;
+    /* padding-bottom: 20px; */
     
 }
 .note_favourite{
@@ -831,20 +972,95 @@ input[type="text"]  {
     background: #ecd6d6;
  
 }
-/* .container {
-    overflow: scroll;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    grid-column-gap: 20px;   
-    padding: 20px;
+.note_conent{
+    width: 100%;
+    height: 75%;
+    border: 1px solid black;
+    /* display:  flex; */
+    /* flex-direction: column; */
+    justify-content: center;    
+    overflow: scroll    ;
 }
 
-.item {
-    margin-top:20px;
-    background: #4CAF50;
-    height: 170px;
-    color: white;
-} */
+.newnote{
+    margin: 0px auto;
+    width: 90%;
+    /* height: 155px; */
+    /* height: 200px; */
+    /* border: 1px solid black; */
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #fff;
+    margin-top: 10px;
+
+}
+.newnoteend{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.newnote p {
+    font-size: 24px;
+    /* font-weight: 70px; */
+}
+.textnote {
+    /* display: flex; */
+    height: 100px;
+    width: 100%;
+   white-space: normal;
+    word-wrap: break-word;
+    word-break: break-word;
+
+    /* Giới hạn tối đa 8 dòng (tuỳ bạn chỉnh) */
+    line-height: 20px;
+    overflow:scroll;
+    margin-bottom: 10px;
+    border-bottom: 1px solid black;
+    /* padding-bottom: 10px; */
+}
+
+.textnote::-webkit-scrollbar{
+    display: none;
+}
+.notefix{
+    position: relative;
+}
+.noteedit{
+ list-style: none;
+  background-color: wheat ;
+  width: 85px;
+  height: 65px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+    right: 7px;
+    bottom: 5px;
+    transform-origin: bottom right;
+ transform: scale(0);
+ transition: transform 0.1s ease;
+/* display: none; */
+
+}
+.notefix:hover .noteedit{
+    transform: scale(1);
+}
+
+.noteedit li{
+    /* background-color: gray; */
+    width: 100%;
+    margin-left: 15px;
+    height: calc(100% / 2 );
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border-radius: 5px;
+    gap:5%;
+
+}
+
 
 .note_grid{
     overflow-y: scroll;
@@ -956,29 +1172,39 @@ input[type="text"]  {
     border-radius: 5px;
     background: #ffffff;
 }
-.notepageclass{
 
-    display: none;
-}
-#zoom_note:checked ~ .notepageclass{
+
+.notepage_open{
     top:0;
-    gap:10px;
+    left:  0;
     height: 100%;
+    display: flex;
+    transition: 0.3s;
 }
 
+.notepagezoom{
+    top:var(--headmenu-heigh);
+    height: calc(100% - var(--headmenu-heigh));
+    transition: 0.3s;
+}
+
+.open_note{
+    display: flex;
+}
 
 /* ================================================================================================================================================================
  */
 
 .todolistpage{
     position: fixed;
-
-    top:0;
+    top:var(--headmenu-heigh);
     left: 0;
     width: 100%;
-    height: 100%;
-    
-    background-color: rgb(205, 215, 233);
+    height: calc(100% - var(--headmenu-heigh));
+    background-color: var(--notepage-color);
+    transition: 0.3s;
+    overflow: scroll;
+    display: none;
 }
 
 
@@ -990,6 +1216,7 @@ input[type="text"]  {
     align-items: center;
     width: 100%;
     height: 75px;
+    background-color: var(--todoheaing-color);
 }
 
 .todotitle{
@@ -1064,10 +1291,6 @@ input[type="text"]  {
     align-items: center;
     border-bottom: 2px solid gray;
 }
-.todolistpage{
-    /* display: none;  */
-}
-
 
 
 .todocontent{
@@ -1081,6 +1304,7 @@ input[type="text"]  {
     overflow: scroll;
     /* min-height: 400px; */
     height: calc(100% - 75px - 45px - 60px - 50px);
+    background-color: var(--todocontent-color);
 }
 
 
@@ -1098,7 +1322,7 @@ input[type="checkbox"]{
     align-items: center;
     border-radius: 7px;
     justify-content: space-between;
-    background-color: #ffffff;
+    background-color: var(--todoitem-color);
     margin-top: 15px;
     /* padding */
 
@@ -1126,6 +1350,7 @@ input[type="checkbox"]{
     width:calc(100% - 35px - 5px) ;
     height: 65px;
     border: 1px solid black;
+    background-color: var(--taskcontent-color);
     /* background-color: bisque; */
 }
 .fix_trash{
@@ -1311,30 +1536,691 @@ input[type="checkbox"]{
     /* display: none; */
 }
 
+.todolistopen{
+    top:0;
+    left: 0;
+    height: 100%;
+    /* display: block; */
+}
+.open_todo{
+    display: block;
+}
 
+/* ============================================================================================ */
 
-
-
-
-
-
-
-.todolistpage{
+.schdulepage{
+    position: fixed;
+    top:var(--headmenu-heigh) ;
+    height: calc(100% - var(--headmenu-heigh));
+    width: 100%; 
+    border: 1px solid black;
+    transition: 0.3s;
+    background-color: #c2d6e8;
     display: none;
 }
 
-#zoom_todo:checked ~ .todolistpage{
-    /* display: none; */
+
+.schdule_heading{
+    display:  flex;
+    justify-content: space-between;
+    padding-left: 20px;     
+    padding-right: 20px;
+    height: var(--headmenu-heigh);
+    border: 1px solid black;
+    align-items: center;
+    background-color: #c6c4eb;
+}
+.date_year_year , .date_year_month{
+    font-size: 15px;
+   
+}
+
+.schudle_calender{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    border: 1px solid black;
+    gap:6px;
+}
+.btnleft , .btnright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calender_day{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:10%;
+}
+.schdule_time_work{
+    margin-top: 10px;
+    width: 100%;
+    height: 75%;
+    display: flex;
+    overflow: scroll;
+    /* margin-top: 10px; */
+    border: 1px solid rgb(0, 0, 0);
+
+
+}
+.schdule_time{
+    width: 20%;
+    /* height: 70%; */
+    /* border: 1px solid black; */
+    /* transform: translate(); */
+}
+.schdule_work{
+    width: 100%;
+    height: auto;
+    /* height: 100%; */
+}
+
+.schdule_time_hours{
+    display: flex;
+    flex-direction: column;
+    /* justify-self: center; */
+    align-items: center;
+    list-style: none;
+    /* gap:70px; */
+    /* border: 1px solid black; */
+    /* margin-top: 10px; */
+          
+
+}
+.schdule_time_hours li{
+    height: 20px;
+    margin-bottom: 80px;
+    width: 100%;
+    text-align: center;
+}
+table{
+    /* table-layout: fixed; */
+    border-collapse: collapse;
+
+}
+.schdulecontentbox{
+    width: 85%;
+    height: 99.2px;
+    /* border: 1px solid black; */
+    border-left: 1px solid black;
+    border-bottom: 0.5px solid rgb(134, 131, 131);
+}
+.calenderchoosegroup{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:1%;
+}
+
+.line{
+    width: 100%;
+    height: 1.5px; 
+    background-color: black;
+    /* border: 1px solid  black; */
+    /* opacity: 0.3; */
+    margin: auto 0px;
+}
+.hour_left{
+    text-align: center;
+}
+
+.day_1to5{
+    border: 1px solid black;
+    width: 20px;
+    
+    /* height: ; */
+    border-radius: 5px;
+    text-align: center;
+    background-color: rgb(141, 177, 227);
+    opacity: 0.6;
+}
+.day_3{
+    width: 30px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding-top: 5px;
+}
+
+.day_3{
+    opacity: 1;
+    background-color: #5a54c9;
+}
+
+
+.schdule_add{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    position: absolute;
+    bottom: 100px;
+    right: 30px;
+    background-color: #5a54c9;
+}
+.schduleopen{
+    transition: 0.3s;
+    top:0;
+    left: 0;
+    height: 100%;
+}
+
+.open_schdule{
+    display: block;
+}
+
+/* ===================================CHOOSE DAY IN MONNTH AND YEARS======================= */
+  
+*{
+    padding: 0;
+    margin: 0;
+    font-family:'Poppis' , 'sans-serif';
+}
+
+.underschdulechooseday{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top:0;
+    /* background-color: #d4deec; */
+    filter: blur(5px);
+    opacity: 0.95;
+    transition: 1.5s;
+
+}
+
+.schdulechosseday{
+    /* height: 40%;    */
+    position:relative;
+    width: 80%;
+    background-color: rgb(215, 215, 209);
+    border-radius: 10px;
+    padding: 10px;
+    padding-bottom: 20px;
+    margin: 150px auto;
+    transition: 0.5s;
+    /* height: 40%;     */
+}
+    
+
+.calenderheader{
+    /* padding: 15px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    /* margin:20px 0px; */
+    padding-bottom: 10px;
+}
+.calendergroup{
+    cursor: pointer;
+    /* width: 350px; */
+    /* padding: 30px; */
+    padding-top: 15px;
+}
+.movemonth_year{
+    display: flex;
+}
+.moveleft , .moveright{
+    width: 30px;
+    height: 30px;
+    margin: 0px 5px;
+    background-color: rgb(234, 236, 224);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.calendergroup ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+
+
+.calendergroup .days li{
+    z-index: 1;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 17px;
+}
+.calendergroup ul li{
+    position: relative;
+    width: calc(100% / 7) ;
+    text-align: center;
+}
+
+.calendergroup .days  li::before{
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    top:50%;
+    left: 50%;
+    border-radius: 50%;
+    transform: translate(-50% , -50%) ;
+    /* background: gray; */
+    z-index: -1;
+    
+}
+.calender_close_done{
+    display: flex;
+
+    align-items: center;
+    justify-content: space-around;
+    gap:40px;
+}
+.calender_done , .calender_close{
+    width: 70px;
+    height: 35px;
+    background-color: rgb(135, 135, 143);
+    /* margin-left:220px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    /* margin-bottom: 10px; */
+    margin-top: 10px;
+}
+
+
+.days li:hover::before{
+    background-color: whitesmoke;
+}
+
+.days .change::before{
+    background-color
+    : rgb(70, 70, 238);
+}
+/* ============================================================================================= */
+/* .schdulechosseday.closecalender{
+    display: none;
+} */
+.underschdulechooseday , .schdulechosseday{
+    display: none;
+}
+
+.opencalender{
+    display: block;
+    z-index: 161;
+    
+}
+.openlosecalender_under{
+    display: block;
+    z-index: 161;
+
+}
+/* ================================================CHART========================================================= */
+
+.chartpage{
+    position: fixed;
     top:var(--headmenu-heigh);
-    height: calc((100% - var(--headmenu-heigh)) );
+    width: 100%;
+    height:calc(100% - var(--headmenu-heigh));
+    background-color: rgb(156, 203, 244);
+    transition: 0.3s;
+    display: none;
+
+}
+.chartheading{
+    width: 100%;
+    height: var(--headmenu-heigh);
+    background-color: #94a3b8;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    gap:40%;
+    
+}
+
+
+ .chart_name_content{
+    width: 100%;
+    height: calc(100% - var(--headmenu-heigh));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content:center ;  */
+    overflow: scroll;
+    /* padding-bottom: 40px; */
+
+
+}
+.chart_name_content::-webkit-scrollbar{
+    display: none;
+}
+
+.chart_name_element{
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 95%;
+    /* height: calc( (calc(100vh - var(--headmenu-heigh)) ) / 3  ); */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e9edf0;
+    /* bo
+    rder: 1px solid black; */
+}
+
+.chart_name_title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    font-size: 30px;
+}
+.chart_name{
+    width: 100%;
+    height: 130px;
+    display: flex;
+    border-radius: 10px;
+    /* margin-top: 10px; */
+    padding: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.chart_name_left{
+    width:calc(58% - 10px);
+    height: 90%;
+    border-radius: 5px;
+    background-color: whitesmoke;
+}
+.chart_name_right{
+    /* width: 42%; */
+    width:calc(42% - 10px);
+    height: 95%;
+    /* border: 1px solid black; */
+    border-radius: 5px;
+
+    background-color: whitesmoke;
+}
+.nameleft_head ,.nameright_head{
+    width: 100%;
+    height: 27%;
+    /* border: 1px solid black ; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+    }
+.leftitem1 , .leftitem2 , .leftitem3{
+    display: flex;
+    width: 75%;
+    font-size: 20px;
+    justify-content: left;
+}
+.rightitem1, .rightitem2 ,.rightitem3{
+     font-size: 20px;
+    text-align: left;
+}
+.name_leftitem , .nameright_item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:start;
+    gap:5px;
+}
+.name_leftitem{
+    width: 100%;
+}
+
+.Cline{
+    width: 80%;
+    height: 3px;
+    background-color: #5a54c9;
+    margin: 10px;
+}
+/* ============================================================================================================= */
+
+.chart_note_left{
+    width: 47%;
+    /* height: ; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    padding: 5px;
+} 
+.note_leftitem{
+    height: auto;
+}
+.note_leftitem_all{
+ width: 55px;
+ height:32%;
+ border: 1px solid black;
+ border-radius: 5px;
+ /* margin: 20px; */
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.noteleft_end{
+    width: 100%;
+    height: 40%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    gap:15%;
+}
+.noteleft_end_Tags ,  .noteleft_end_Favo {
+    width: 40%;
+    height: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.noteleft_end_Favo{
+    width: 50%;
+    height: 100%;
+}
+
+#horizontalBar{
+    border: 1px solid rgb(159, 161, 230);
+    width: 50px;
+    height: 100px;
+    margin: auto 0px;
+}
+
+.chart_todolist_element{
+    /* height: 100vh    ; */
+    /* padding-bottom: 10px; */
+    margin-bottom: 10px;
+}
+.chart_todolist{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.chart_todolist_box{
+    height: 50px;
+    width: calc(80%/3 );
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    margin-top:5px;
+    background-color: whitesmoke;
+}
+
+.timeofday{
+    width: 95%;
+    /* height: 300px; */
+    /* border: 1px solid black; */
+    background-color: #fafafa;
+    margin-top: 10px;
+    border-radius: 5px;
+    
+}
+.timeofdayitem{
+    background-color: var(--timeofdayitem-color);
+    width: 100%;
+
+}
+.timeofdayhead{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.chart_comparetimeofweek{
+    width: 95%;
+    margin-bottom: 20px;
+    background-color: #e9edf0;
+    border-radius: 5px;
+}
+
+.comparehead{
+    width: 100%;
+    height: 15%;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.chart_schdule_emelent{
+     width: 95%;
+     /* height: 1px; */
+     border: 1px solid black;
+     display: flex;
+     flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #fafafa;
+    padding: 10px 0px;
+}
+.chart_schdule_emelent_head{
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.schdule_element_box{
+    width: 100%;
+    height: calc(300px);
+    display: flex;
+
+
+    
+}
+.chart_schdule_emelent_box{
+    width: 100%;
+    display: flex;
+     flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    /* border: 1px solid black; */
+    margin-bottom: 15px;
+}
+.schdule_element_box{
+    width: calc(90%/3);
+    height: 85px;
+    border: 1px solid black;
+    /* padding: 20px 0px ; */
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.schdule_element_head{
+    width: 100%;
+    height: 20%;
+    /* margin-bottom: 20px; */
+    /* border: 1px solid black; */
+    /* padding-bottom: ; */
+    text-align: center;
+}
+.schdule_element_body{
+    width: 60%;
+    height: 60%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    /* margin: 10px 0px; */
+}
+.schdule_element_end{
+    width: 100%;
+    height: 20%;
+    /* border: 1px solid black; */
+    text-align: center;
+
+}
+.chart_pomo_element{
+    background-color: var(--chart_pomo_element-color);
+}
+.chart_note_element{
+    background-color: var(--chart_note_element-color);
+}
+.chart_todolist_element{
+    background-color: var(--chart_todolist_element-color);
+}
+.chart_schdule_emelent{
+    background-color: var(--chart_schdule_emelent-color);
+}
+.chart_name_content{
+    background-color: var(--chart_name_content-color);
+}
+.todolistbarcls{
+    background-color: var(--todolistbar-color);
+}
+.chartheading{
+    background-color: var(--chartheading-color);
+}
+.chartopen{
+    /* display: block; */
+    /* position: fixed; */
+        top:0px;
+        left: 0;
+        width: 100%;
+        height:100%;
+        /* background-color: rgb(156, 203, 244); */
+        transition: 0.3s;
+}
+
+.open_chart{
+    display: block;
 }
 
 
 
-
 }
 
-@media (max-width: 267px) {
+/* @media (max-width: 267px) {
     .menulist{
         width: 100vw;
     }
@@ -1349,7 +2235,4 @@ input[type="checkbox"]{
 }
 @media (max-width: 1440px){
 
-
-
-
-}
+} */
